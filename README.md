@@ -49,6 +49,6 @@ class DeflateEncoder:
     decode(code) - Decodes message using Deflate algorithm
 ```
 
-Algorithms - laba.py
+Алгоритми - laba.py
 
-Analysys - analysys.ipynb
+Аналіз - analysys.ipynb
