@@ -52,3 +52,5 @@ class DeflateEncoder:
 Алгоритми - laba.py
 
 Аналіз - analysys.ipynb
+
+Для тестів використовувався файл book.txt
