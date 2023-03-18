@@ -139,6 +139,7 @@ class LZW:
             pos_cursor += len(line) - 1
         return dictionary, code
 
+
 class HuffmanEncoder:
     """
     Huffman Algorithm
