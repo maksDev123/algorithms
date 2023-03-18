@@ -5,14 +5,14 @@ LZ77 (Lempel-Ziv-1977) — це проста, але напрочуд ефект
 
 #### Використання:
 Цей алгоритм широко поширений у наших поточних системах, оскільки, наприклад, ZIP і GZIP базуються на LZ77.
+
+Наша реалізаці алгоритсу LZ77 має такі методи:
 ```
 class LZ77:
     decode(decoded) - Decodes given message
     longest_match(buffer, message) - Finds longest match if message part and buffer
     encode(message) - Encodes message
 ```
-
-
 
 ### LZW Algorithm
 
@@ -36,6 +36,8 @@ class LZW:
 
 #### Використання: 
 Huffman широко використовується в усіх основних форматах стиснення, з якими ви можете зіткнутися - від GZIP, PKZIP (winzip тощо) і BZIP2 до таких форматів зображень, як JPEG і PNG.
+
+Наша реалізаці алгоритсу Haffman Algorithm має такі методи:
 ```
 class HuffmanEncoder:
     find_probabilities(text) - Finds probabilities for given text
@@ -48,8 +50,11 @@ class HuffmanEncoder:
 ### Deflate Algorithm
 
 В обчислювальній техніці Deflate (стилізований як DEFLATE) — це формат файлу стиснення даних без втрат, який використовує комбінацію кодування LZ77 і Хаффмана.
+
 #### Використання:
 DEFLATE є широко використовуваним стандартом для виконання стиснення без втрат і формує основу таких утиліт, як gzip, і таких бібліотек, як Zlib.
+
+Наша реалізаці алгоритсу Deflate має такі методи:
 ```
 class DeflateEncoder:
     encode(text) - Encodes message using deflate algoithm
