@@ -26,8 +26,8 @@ class LZW:
 ```
 ### Huffman Algorithm
 
-Huffman coding is a lossless data compression algorithm. The idea is to assign variable-length codes to input characters, lengths of the assigned codes are based on the frequencies of corresponding characters. 
-The variable-length codes assigned to input characters are Prefix Codes, means the codes (bit sequences) are assigned in such a way that the code assigned to one character is not the prefix of code assigned to any other character. This is how Huffman Coding makes sure that there is no ambiguity when decoding the generated bitstream. 
+Кодування Хаффмана — це алгоритм стиснення даних без втрат. Ідея полягає в тому, щоб призначити коди змінної довжини вхідним символам, довжина призначених кодів базується на частотах відповідних символів.
+Коди змінної довжини, призначені вхідним символам, є префіксними кодами, тобто коди (бітові послідовності) призначаються таким чином, що код, призначений одному символу, не є префіксом коду, призначеного будь-якому іншому символу. Таким чином кодування Хаффмана забезпечує відсутність неоднозначності під час декодування згенерованого бітового потоку.
 
 ```
 class HuffmanEncoder:
@@ -40,7 +40,7 @@ class HuffmanEncoder:
 
 ### Deflate Algorithm
 
-In computing, Deflate (stylized as DEFLATE) is a lossless data compression file format that uses a combination of LZ77 and Huffman coding.
+В обчислювальній техніці Deflate (стилізований як DEFLATE) — це формат файлу стиснення даних без втрат, який використовує комбінацію кодування LZ77 і Хаффмана.
 
 ```
 class DeflateEncoder:
